@@ -1,12 +1,13 @@
 body{
-	font-family: "Helvetica Neue",  sans-serif !important
+	font-family: "Helvetica Neue",  sans-serif !important;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 #header{
-	height: 319.33px;
 	background-color: #707070;
 	border: #707070 1px;
-	padding: 80px 0;
+	padding: 50px 0;
 }
 
 #header #header-content p{
@@ -22,34 +23,96 @@ body{
 #header #header-content p:nth-child(2){
 	font-size: 40px;	
 	font-weight: bold;
+	margin-top: 0px;
 }
 
 #header #header-content p:nth-child(3){
 	font-size: 14px;
+	margin-bottom: 40px
 }
 
-#header #menu-header .navbar-nav{
-	margin: auto
+#header #header-nav{
+	margin: 0 auto;
+	display: table
 }
 
-#header #menu-header ul.navbar-nav li{
-	margin: 0px 20px 0px 20px;
+#header #header-nav ul{
+	padding-left:0;
 }
 
-#header #menu-header ul.navbar-nav li a{
-	color: #888;
+#header #header-nav ul li{
+	display: inline;
 	background-color: white;
 	text-align: center;
 	font-size: 14px;
-	padding: 10px 25px 10px 25px;
+	padding: 10px 30px 10px 30px;
 	border-radius: 3px;
 	box-shadow: 0px 1px 2px #FFF;
+	margin: 0 20px;
 }
 
-#header #menu-header ul.navbar-nav li a:hover{
-	color: #999999;
-	box-shadow: 0px 1px 6px #FFF;
+#header #header-nav ul li a{
+	color: #888;
+	text-decoration: none
 }
+
+#products{
+	color: #888888;
+	padding: 0 20% 0 20%;
+}
+
+#products h3{
+	margin: 50px 0 50px 0;
+	text-align: center;
+}
+
+#products #card {
+    text-align: center;
+}
+
+#products #card .product {
+    display: inline-block;
+    width: 200px;
+    font-size: 12px;
+    margin: 0px 10px 40px 10px;
+    text-align: left
+}
+
+#products #card .product .prod-img {
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #707070;
+    height: 150px;
+}
+
+#products #card .product .prod-name {
+    font-size: 14px;
+}
+
+#products #card .product .prod-price-to {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#products #card .product .buy-now {
+	border: 1px solid #707070;
+	border-radius: 4px;
+	padding: 8px 0 8px 0;
+	text-align: center;
+	margin: 0
+}
+
+#products #show-more {
+	border: 1px solid #707070;
+	border-radius: 4px;
+	padding: 10px 50px 10px 50px;
+	text-align: center;
+	margin: auto;
+	display: flex;
+	background-color: white;
+	color: #888888;
+}
+
 
 #footer {
 	height: 189.44px;

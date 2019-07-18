@@ -4,39 +4,28 @@
 	<title>Produtos</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="lib/css/style.css">
-	<link rel="stylesheet" href="lib/css/bootstrap.min.css">
 </head>
 <body>
 	<header id="header" class="">
-		<div id="header-content" class="container">
+		<div id="header-content">
 			<p>uma seleção de produtos</p>
 			<p>especial para você</p>
 			<p>Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</p>
 		</div>
-		<div id="menu-header">
-			<nav class="navbar navbar-expand-md">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    				<span class="navbar-toggler-icon"></span>
-  				</button>
-  				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-  					<ul class="navbar-nav mr-auto">
-  						<li class="nav-item">
-  							<a class="nav-link" href="#">Conheça a Linx</a>
-  						</li><li class="nav-item">
-  							<a class="nav-link" href="#">Ajude o Algoritmo</a>
-  						</li><li class="nav-item">
-  							<a class="nav-link" href="#">Seus Produtos</a>
-  						</li><li class="nav-item">
-  							<a class="nav-link" href="#">Compartilhe</a>
-  						</li>
-  					</ul>
-  				</div>
-			</nav>
+		<div id="header-nav">
+			<ul>
+				<li><a href="">Conheça a Linx</a></li>
+				<li><a href="">Ajude o algoritmo</a></li>
+				<li><a href="">Seus produtos</a></li>
+				<li><a href="">Compartilhe</a></li>
+			</ul>
 		</div>
 	</header>
-	<div class="products">
-		<button id="click">click</button>		
-	</div>
+	<section id="products">
+		<h3>Sua seleção especial</h3>
+		<div id="card"></div>
+		<button page="2" id="show-more">Ainda mais produtos Aqui!</button>		
+	</section>
 	<footer id="footer">
 		<div id="footer-content" class="container">
 			<p>Testando suas habilidades em HTML, CSS e JS</p>
@@ -44,8 +33,6 @@
 			<p>2019</p>	
 		</div>
 	</footer>
-	<script src="lib/js/jquery-3.4.1.min.js"></script>
-	<script src="lib/js/bootstrap.min.js"></script>
 	<script src="lib/js/script.js"></script>
 </body>
 </html>

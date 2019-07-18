@@ -1,0 +1,22 @@
+#header #menu-header .navbar-nav{
+	margin: auto
+}
+
+#header #menu-header ul.navbar-nav li{
+	margin: 0px 20px 0px 20px;
+}
+
+#header #menu-header ul.navbar-nav li a{
+	color: #888;
+	background-color: white;
+	text-align: center;
+	font-size: 14px;
+	padding: 10px 25px 10px 25px;
+	border-radius: 3px;
+	box-shadow: 0px 1px 2px #FFF;
+}
+
+#header #menu-header ul.navbar-nav li a:hover{
+	color: #999999;
+	box-shadow: 0px 1px 6px #FFF;
+}
