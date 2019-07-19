@@ -12,6 +12,8 @@
 			<p>especial para você</p>
 			<p>Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</p>
 		</div>
+		<img id="hidden-menu-icon" src="lib/img/hidden-menu.png">
+		<span id="overlay-nav" class="overlay"></span>
 		<div id="header-nav">
 			<ul>
 				<li><a href="">Conheça a Linx</a></li>
@@ -24,7 +26,24 @@
 	<section id="products">
 		<h3>Sua seleção especial</h3>
 		<div id="card"></div>
-		<button page="2" id="show-more">Ainda mais produtos Aqui!</button>		
+		<button page="2" id="show-more" class="button-send btn">Ainda mais produtos Aqui!</button>		
+	</section>
+	<section id="share">
+		<h3>Compartilhe a novidade</h3>
+		<p>Quer que seu amigos também ganhem a lista personalizada deles? Preencha agora!</p>
+		<form>
+			<div id="fields">
+				<div class="name">
+					<p>Nome do seu amigo:</p>
+					<input type="text" name="name">
+				</div>
+				<div class="email">
+					<p>E-mail:</p>
+					<input type="email" name="email">
+				</div>
+			</div>
+			<button class="button-send btn" type="button">Enviar Agora</button>
+		</form>
 	</section>
 	<footer id="footer">
 		<div id="footer-content" class="container">

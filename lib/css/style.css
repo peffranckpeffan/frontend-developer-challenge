@@ -31,45 +31,94 @@ body{
 	margin-bottom: 40px
 }
 
-#header #header-nav{
-	margin: 0 auto;
-	display: table
+#header #hidden-menu-icon {
+	display: none
 }
 
 #header #header-nav ul{
 	padding-left:0;
 }
 
-#header #header-nav ul li{
-	display: block;
-	float: left;
-	width: 160px;
-	background-color: white;
-	text-align: center;
-	font-size: 14px;
-	padding: 10px 0;
-	border-radius: 3px;
-	box-shadow: 0px 1px 2px #FFF;
-	margin: 0 20px;
+#header #header-nav li a{
+	text-decoration: none;
+	color: #707070;
 }
 
-#header #header-nav ul li a{
-	color: #888;
-	text-decoration: none
+@media (min-width: 820px){
+	#header #header-nav{
+		margin: 0 auto;
+		display: table!important
+	}
+
+	#header #header-nav ul li{
+		display: block;
+		float: left;
+		width: 160px;
+		background-color: white;
+		text-align: center;
+		font-size: 14px;
+		padding: 10px 0;
+		border-radius: 3px;
+		box-shadow: 0px 1px 2px #D6D6D6;
+		margin: 0 20px;
+	}
+
+	#header #header-nav ul li:hover{
+		box-shadow: 0px 1px 4px #D6D6D6;
+	}
+
+	#header #header-nav li:hover > a{
+		color: #999999;
+	}
+}
+
+@media (max-width: 819px){
+	#header #hidden-menu-icon {
+		display: block;
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		max-width: 40px;
+		cursor: pointer;
+	}
+
+	#header .overlay{
+		background-color: black;
+		opacity:0.4;
+		display: none;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 3;
+	}	
+
+	#header #header-nav{
+		position: fixed;
+		top: 0;
+		background-color: white;
+		max-width: 230px;
+		width: 100vw;
+		border-radius: 2px;
+		min-height: 100vh;
+		display: none;
+		z-index: 1000		
+	}
+
+	#header #header-nav li{
+		padding: 20px;
+	}
 }
 
 #products{
 	color: #888888;
-	padding: 0 20% 0 20%;
+	max-width: 962px;
+	text-align: center;
+	margin:auto;
 }
 
 #products h3{
 	margin: 50px 0 50px 0;
-	text-align: center;
-}
-
-#products #card {
-    text-align: center;
 }
 
 #products #card .product {
@@ -77,7 +126,14 @@ body{
     width: 200px;
     font-size: 12px;
     margin: 0px 10px 40px 10px;
-    text-align: left
+    text-align: left;
+    padding: 10px;
+    transition: border 4s linear;
+}
+
+#products #card .product:hover {
+    border: 1px solid #707070;
+    box-shadow: 0px 1px 2px #707070;
 }
 
 #products #card .product .prod-img {
@@ -104,20 +160,87 @@ body{
 	margin: 0
 }
 
-#products #show-more {
+#products #card .product .buy-now:hover{
+	cursor: pointer;
+	background-color: #707070;
+ 	-webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+
+#products #card .product .buy-now:hover > a{
+	color: white
+}
+
+.button-send {
 	border: 1px solid #707070;
 	border-radius: 4px;
-	padding: 10px 50px 10px 50px;
+	padding: 10px 0px 10px 0px;
+	width: 260px;
 	text-align: center;
-	margin: auto;
-	display: flex;
 	background-color: white;
 	color: #888888;
 }
 
+#share{
+	color: #888888;
+	text-align: center;
+	margin:180px 0 150px 0;
+}
+
+#share h3{
+	margin: 0 0 50px 0;
+}
+
+#share p {
+	margin: 0 0 35px 0;
+	font-size: 14px
+}
+
+#share form{
+	max-width: 800px;
+	margin: auto;
+}
+
+#share form #fields{
+	margin-bottom: 50px;
+}
+
+@media (min-width: 820px){
+	#share form #fields{
+		display: inline-flex;
+	}
+
+	#share form #fields .name{
+		width: 50%;
+		text-align: left;
+		margin-right: 50px;
+	}
+
+	#share form #fields .email{
+		width: 50%;
+		text-align: left;
+	}
+
+}
+
+@media (max-width: 819px){
+	#share form #fields .name{
+		margin-bottom: 10px;
+	}
+}
+
+#share form #fields input{
+	width: 340px;
+	height: 30px;
+}
+
+#share form #fields p{
+	margin: 0 0 5px 0;
+}
 
 #footer {
-	height: 189.44px;
+	padding: 60px 0;
 	background-color: #707070;
 	border: 1px #707070
 }
@@ -126,4 +249,13 @@ body{
 	color:white;
 	text-align: center;
 	font-size: 12px;
+}
+
+.btn:hover{
+	cursor: pointer;
+	color: white;
+	background-color: #707070;
+ 	-webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
 }
