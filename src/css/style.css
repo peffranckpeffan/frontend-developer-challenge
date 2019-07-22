@@ -1,9 +1,40 @@
+/**
+	general style
+*/
+
 body{
 	font-family: "Helvetica Neue",  sans-serif !important;
 	margin: 0;
 	box-sizing: border-box;
 }
 
+.btn:hover{
+	cursor: pointer;
+	color: white;
+	background-color: #707070;
+ 	-webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+
+.overlay{
+	background-color: black;
+	opacity:0.4;
+	display: none;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 3;
+}
+
+/**
+	end general style
+*/
+
+/**
+	header style
+*/
 #header{
 	background-color: #707070;
 	border: #707070 1px;
@@ -31,7 +62,7 @@ body{
 	margin-bottom: 40px
 }
 
-#header #hidden-menu-icon {
+#hidden-menu-icon {
 	display: none
 }
 
@@ -73,24 +104,13 @@ body{
 }
 
 @media (max-width: 819px){
-	#header #hidden-menu-icon {
+	#hidden-menu-icon {
 		display: block;
 		position: absolute;
 		top: 10px;
 		left: 10px;
 		max-width: 40px;
 		cursor: pointer;
-	}
-
-	#header .overlay{
-		background-color: black;
-		opacity:0.4;
-		display: none;
-		height: 100%;
-		position: absolute;
-		top: 0;
-		width: 100%;
-		z-index: 3;
 	}	
 
 	#header #header-nav{
@@ -109,6 +129,14 @@ body{
 		padding: 20px;
 	}
 }
+
+/**
+	end header style
+*/
+
+/**
+	section card product style
+*/
 
 #products{
 	color: #888888;
@@ -182,6 +210,14 @@ body{
 	color: #888888;
 }
 
+/**
+	end section card product style
+*/
+
+/**
+	section share style
+*/
+
 #share{
 	color: #888888;
 	text-align: center;
@@ -239,6 +275,14 @@ body{
 	margin: 0 0 5px 0;
 }
 
+/**
+	end section share style
+*/
+
+/**
+	footer style
+*/
+
 #footer {
 	padding: 60px 0;
 	background-color: #707070;
@@ -251,11 +295,6 @@ body{
 	font-size: 12px;
 }
 
-.btn:hover{
-	cursor: pointer;
-	color: white;
-	background-color: #707070;
- 	-webkit-transition: background-color 200ms linear;
-    -ms-transition: background-color 200ms linear;
-    transition: background-color 200ms linear;
-}
+/**
+	end footer style
+*/

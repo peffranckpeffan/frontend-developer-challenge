@@ -3,26 +3,12 @@
 <head>
 	<title>Produtos</title>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="lib/css/style.css">
+	<link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-	<header id="header" class="">
-		<div id="header-content">
-			<p>uma seleção de produtos</p>
-			<p>especial para você</p>
-			<p>Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</p>
-		</div>
-		<img id="hidden-menu-icon" src="lib/img/hidden-menu.png">
-		<span id="overlay-nav" class="overlay"></span>
-		<div id="header-nav">
-			<ul>
-				<li><a href="">Conheça a Linx</a></li>
-				<li><a href="">Ajude o algoritmo</a></li>
-				<li><a href="">Seus produtos</a></li>
-				<li><a href="">Compartilhe</a></li>
-			</ul>
-		</div>
-	</header>
+	<header id="header" class=""></header>
+	<img id="hidden-menu-icon" src="src/img/hidden-menu.png">
+	<span id="overlay-nav" class="overlay"></span>
 	<section id="products">
 		<h3>Sua seleção especial</h3>
 		<div id="card"></div>
@@ -31,7 +17,7 @@
 	<section id="share">
 		<h3>Compartilhe a novidade</h3>
 		<p>Quer que seu amigos também ganhem a lista personalizada deles? Preencha agora!</p>
-		<form>
+		<form id="share-form">
 			<div id="fields">
 				<div class="name">
 					<p>Nome do seu amigo:</p>
@@ -42,16 +28,10 @@
 					<input type="email" name="email">
 				</div>
 			</div>
-			<button class="button-send btn" type="button">Enviar Agora</button>
+			<button id="send-email" class="button-send btn" type="button">Enviar Agora</button>
 		</form>
 	</section>
-	<footer id="footer">
-		<div id="footer-content" class="container">
-			<p>Testando suas habilidades em HTML, CSS e JS</p>
-			<p>Linx Impulse</p>
-			<p>2019</p>	
-		</div>
-	</footer>
-	<script src="lib/js/script.js"></script>
+	<footer id="footer"></footer>
+	<script src="src/js/script.js"></script>
 </body>
 </html>
